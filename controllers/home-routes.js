@@ -1,6 +1,6 @@
 const router = require('express').Router();
-const { User, Rare, Common } = require('../models');
-const withAuth = require('../utils/auth');
+const { User, Crystal } = require('../models');
+const withAuth = require('../utils/auth.js');
 
 // Use withAuth middleware to prevent access to route
 router.get('/rarecrystals', withAuth, async (req, res) => {
@@ -8,7 +8,7 @@ router.get('/rarecrystals', withAuth, async (req, res) => {
       // Find the logged in user based on the session ID
       const userData = await User.findByPk(req.session.user_id, {
         attributes: { exclude: ['password'] },
-        include: [{ model:  }],
+        include: [{ model:  User, Crystal }],
       });
   
       const user = userData.get({ plain: true });
