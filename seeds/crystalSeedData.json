@@ -1,0 +1,107 @@
+[
+    {
+        "name": "Clear Calcite",
+        "description": "description",
+        "price": 15.00,
+        "hardness": 3,
+        "category_id": 1
+    },
+    {
+        "name": "Carnelian",
+        "description": "description",
+        "price": 20.00,
+        "hardness": 7,
+        "category_id": 1
+    },
+    {
+        "name": "Garnet",
+        "description": "description",
+        "price": 1000.00,
+        "hardness": 6.5,
+        "category_id": 2
+    },
+    {
+        "name": "Onyx",
+        "description": "description",
+        "price": 250.00,
+        "hardness": 7,
+        "category_id": 2
+    },
+    {
+        "name": "Tiger Eye",
+        "description": "description",
+        "price": 3.00,
+        "hardness": 7,
+        "category_id": 1
+    },
+    {
+        "name": "Turquoise",
+        "description": "description",
+        "price": 10.00,
+        "hardness": 6,
+        "category_id": 1 
+    },
+    {
+        "name": "Amethyst",
+        "description": "description",
+        "price": 25.00,
+        "hardness": 7,
+        "category_id": 1
+    },
+    {
+        "name": "Lapiz Lazuli",
+        "description": "description",
+        "price": 100.00,
+        "hardness": 5,
+        "category_id": 2
+    },
+    {
+        "name": "Rose Quartz",
+        "description": "description",
+        "price": 100.00,
+        "hardness": 7,
+        "category_id": 1
+    },
+    {
+        "name": "Citrine",
+        "description": "description",
+        "price": 15.00,
+        "hardness": 7,
+        "category_id": 1
+    },
+    {
+        "name": "Fire Opal",
+        "description": "description",
+        "price": 150.00,
+        "hardness": 1,
+        "category_id": 3
+    },
+    {
+        "name": "Alexandrite",
+        "description": "description",
+        "price": 12000.00,
+        "hardness": 8.5,
+        "category_id": 3
+    },
+    {
+        "name": "Poudretteite",
+        "description": "description",
+        "price": 6000.00,
+        "hardness": 5,
+        "category_id": 3
+    },
+    {
+        "name": "Tanzanite",
+        "description": "description",
+        "price": 550.00,
+        "hardness": 6,
+        "category_id": 2
+    },
+    {
+        "name": "Musgravite",
+        "description": "description",
+        "price": 35000.00,
+        "hardness": 8,
+        "category_id": 3
+    }
+]
