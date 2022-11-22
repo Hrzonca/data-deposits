@@ -7,7 +7,7 @@ const submitNewForm = async (event) => {
     const hardness = document.querySelector('#customRangeHardness').value.trim();
   
     if (name && description && price && hardness) {
-      const response = await fetch(`/api/projects`, {
+      const response = await fetch(`/api/crystals`, {
         method: 'POST',
         body: JSON.stringify({ name, price, description, hardness}),
         headers: {
@@ -18,7 +18,7 @@ const submitNewForm = async (event) => {
       if (response.ok) {
         document.location.replace('/profile');
       } else {
-        alert('Failed to create project');
+        alert('Failed to create crystal');
       }
     }
   };
@@ -34,7 +34,7 @@ const submitNewForm = async (event) => {
       if (response.ok) {
         document.location.replace('/profile');
       } else {
-        alert('Failed to delete project');
+        alert('Failed to delete crystal');
       }
     }
   };
