@@ -29,7 +29,9 @@ Crystal.init(
             type: DataTypes.INTEGER,
             allowNull: false,
             validate: {
-                isInt: true
+                isInt: true,
+                min: 1,
+                max: 10
             }
         },
         category_id: {
