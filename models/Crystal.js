@@ -22,7 +22,7 @@ Crystal.init(
             type: DataTypes.DECIMAL,
             allowNull: false,
             validate: {
-                isDecimal: true
+                isDecimal: true 
             }
         },
         hardness: {
