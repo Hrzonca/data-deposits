@@ -1,0 +1,56 @@
+<div class="row">
+        <div class="col-auto">
+          <h2>Welcome, {{name}}!</h2>
+        </div>
+      </div>
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <h3>Submit a New Crystal:</h3>
+      
+          <form>
+            <div class="mb-3">
+              <label for="CrystalName" class="form-label">Crystal Name</label>
+              <input class="form-control" id="crystalInput" aria-label="crystal Input">
+            </div>
+            <div class="mb-3">
+              <label for="priceInput" class="form-label">Price ($):</label>
+              <input class="form-control" id="priceInput">
+            </div>
+            <div class="mb-3">
+              <label for="descriptionInput" class="form-label">Description:</label>
+              <textarea class="form-control" id="descriptionInput" aria-label="With textarea"></textarea>
+            </div>
+           <div>
+            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+              <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btncheck1">Common</label>
+            
+              <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btncheck2">Uncommon</label>
+            
+              <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btncheck3">Rare</label>
+            </div>
+           </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        {{#if crystal.length}}
+        <div class="col project-list">
+          <h3>Current Crystal:</h3>
+      
+          {{#each crystal as |crystal|}}
+          <div class="row">
+            <div class="col-md-8">
+              <h4><a href="/crystal/{{crystal.id}}">{{crystal.name}}</a></h4>
+            </div>
+            <div class="col-md-4">
+              <button class="btn btn-sm btn-danger" data-id="{{crystal.id}}">DELETE</button>
+            </div>
+          </div>
+          {{/each}}
+        </div>
+        {{/if}}
+      </div>
+    </div>
