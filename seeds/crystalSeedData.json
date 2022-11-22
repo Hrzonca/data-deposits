@@ -1,0 +1,19 @@
+[
+    {
+        'name': 'Clear Calcite',
+        'description': 'description',
+        'price': '$15/carat',
+        'hardness': 'Mohs Scale: 3',
+        'category_id': '1',
+    },
+    {
+        'name': 'Carnelian',
+        'description': 'description',
+        'price': '$20/carat',
+        'hardness': 'Mohs Scale: 7',
+        'category_id': '1',
+    },
+    {
+        
+    }
+]
