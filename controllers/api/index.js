@@ -1,10 +1,11 @@
 const router = require('express').Router();
 const userRoutes = require('./userRoutes');
-const commonRoutes = require('./commonCrystalRoutes')
-const crystalRoutes = require('./rareCrystalsRoutes');
+const crystalRoutes = require('./crystalRoutes');
+const categoryRoutes = require('./categoryRoutes');
 
 router.use('/users', userRoutes);
-router.use('/commoncrystals', commonRoutes)
-router.use('/rarecrystals', crystalRoutes);
+router.use('/crystals', crystalRoutes);
+router.use('/categories', categoryRoutes);
+
 
 module.exports = router;
