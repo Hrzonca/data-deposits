@@ -2,12 +2,11 @@ const router = require('express').Router();
 const { Category, Crystal } = require('../../models');
 
 //create new Category
+//double check 
 router.post('/', async (req, res) => {
     try {
         const categoryData = await Category.create({
             name: req.body.name,
-            email: req.body.email,
-            password: req.body.password,
         });
 
         res.status(200).json(categoryData);
@@ -39,4 +38,4 @@ router.get('/:id', async (req, res) => {
     }
   });
 
-  
+module.exports = router;
