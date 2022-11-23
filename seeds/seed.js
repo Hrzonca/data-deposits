@@ -12,7 +12,7 @@ const seedDatabase = async () => {
         
     });
 
-    for (const )
+    for (const)
 }
 
 seedDatabase();
