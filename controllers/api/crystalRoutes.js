@@ -1,27 +1,43 @@
 const router = require('express').Router();
-const { Crystal, User } = require('../../models');
+const { Category, Crystal, User } = require('../../models');
+const withAuth = require('../utils/auth.js');
 
-//This route is for people who have logged in and can see the rare crystals. Not sure what the endpoint should be. 
-// Use withAuth middleware to prevent access to route
-router.get('/Crystals', withAuth, async (req, res) => {
+//I dont think findbypk is correct. Should be finding the common crystals 
+router.get('/common', async (req, res) => {
+ try {
+    const crystalData = await Category.findByPk(req.params.body, {
+        include: [
+            { model: Category }
+        ]
+    });
+
+    res.status(200).json(crystalData);
+} catch (err) {
+  res.status(400).json(err);
+}
+});
+
+//should be finding rare crystals 
+router.get('/rare', withAuth, async (req, res) => {
     try {
-      // Find the logged in user based on the session ID
-      const userData = await User.findByPk(req.session.user_id, {
-        attributes: { exclude: ['password'] },
-        include: [{ model:  User, Crystal }],
-      });
-  
-      const user = userData.get({ plain: true });
-  
-      res.render('profile', {
-        ...user,
-        logged_in: true
-      });
-    } catch (err) {
-      res.status(500).redirect('/login');
-      return;
-    }
-    res.render('login');
-  });
+        const crystalData = await Category.findByPk(req.params.id,
+            {
+                include: [{ model: Crystal }],   
+            });
 
-module.exports = Crystal; 
+            const rare = crystalData.get({ plain: true });
+
+            res.render('profile', {
+                ...rare,
+                logged_in: true
+              });
+            } catch (err) {
+              res.status(500).redirect('/login');
+              return;
+            }
+            res.render('login');
+        
+});
+
+
+module.exports = Crystal;  v
