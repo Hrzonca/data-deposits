@@ -11,4 +11,14 @@ Category.hasMany(Crystal, {
     onDelete: 'CASCADE'
 });
 
+Crystal.belongsTo(User, {
+    foreignKey: 'user_id',
+    onDelete: 'CASCADE'
+});
+
+User.hasMany(Crystal, {
+    foreignKey: 'user_id',
+    onDelete: 'CASCADE'
+});
+
 module.exports = { User, Crystal, Category };
