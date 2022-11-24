@@ -1,6 +1,6 @@
 const router = require('express').Router();
 const { Crystal } = require('../../models');
-const withAuth = require('../utils/auth.js');
+const withAuth = require('../../utils/auth');
 
 router.post('/', withAuth, async (req, res) => {
     try {
