@@ -1,1 +1,11 @@
-[]
+[
+    {
+        "category_name": "common"
+    },
+    {
+        "category_name": "uncommon"
+    },
+    {
+        "category_name": "rare"
+    }
+]
