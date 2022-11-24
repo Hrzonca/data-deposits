@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Category, Crystal, User } = require('../../models');
+const { Category, Crystal } = require('../../models');
 const withAuth = require('../utils/auth.js');
 
 //I dont think findbypk is correct. Should be finding the common crystals 
