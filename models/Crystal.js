@@ -26,10 +26,10 @@ Crystal.init(
             }
         },
         hardness: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.DECIMAL,
             allowNull: false,
             validate: {
-                isInt: true,
+                isDecimal: true,
                 min: 1,
                 max: 10
             }
