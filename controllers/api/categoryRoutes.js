@@ -1,9 +1,8 @@
 const router = require('express').Router();
 const { Category, Crystal } = require('../../models');
 
-//create new Category
-//double check 
-router.post('/', async (req, res) => {
+//find all categories
+router.get('/', async (req, res) => {
     try {
         const categoryData = await Category.create({
             name: req.body.name,
@@ -38,4 +37,4 @@ router.get('/:id', async (req, res) => {
     }
   });
 
-module.exports = router;
+// module.exports = router;
