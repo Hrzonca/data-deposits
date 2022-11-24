@@ -15,7 +15,7 @@ const seedDatabase = async () => {
     for (const crystal of crystalData) {
         await Crystal.create({
             ...crystal,
-            user_id: user[Math.floor(Math.random() * users.length)].id,
+            user_id: users[Math.floor(Math.random() * users.length)].id,
         });
     }
     process.exit(0);
