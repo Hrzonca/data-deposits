@@ -1,12 +1,12 @@
 const router = require('express').Router();
-const { Crystal } = require('../models');
+const { Crystal, Category } = require('../models');
 
 
 router.get('/', async (req, res) => {
   try {
     const common = await Crystal.findAll({
       include: [
-        {model: Crystal}
+        { model: Category }
       ]
     });
 
