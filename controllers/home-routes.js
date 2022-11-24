@@ -6,7 +6,10 @@ router.get('/', async (req, res) => {
   try {
     const common = await Crystal.findAll({
       include: [
-        { model: Category }
+        {
+        model: Category,
+        attributes: ['category_name'] 
+        }
       ]
     });
 

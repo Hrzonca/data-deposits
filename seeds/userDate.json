@@ -1,18 +1,18 @@
 [
     {
-      "name": "Raine",
-      "email": "sal@gmail.com",
-      "password": "password"
+        "name": "Raine",
+        "email": "sal@gmail.com",
+        "password": "password"
     },
     {
-      "name": "Ashe",
-      "email": "lernantino@gmail.com",
-      "password": "password"
+        "name": "Ashe",
+        "email": "lernantino@gmail.com",
+        "password": "password"
     },
     {
-      "name": "Chad",
-      "email": "chad@gmail.com",
-      "password": "password"
+        "name": "Chad",
+        "email": "chad@gmail.com",
+        "password": "password"
     },
     {
         "name": "Mabel",
