@@ -1,7 +1,7 @@
 [
     {
         "name": "Clear Calcite",
-        "description": "description",
+        "description": "Calcite is an abundant mineral found in many geological environments. It forms by precipitation from ground and surface waters, forming the major component of marls and limestone in the ocean, lakes and rivers. These crystals are often soft and shiny. They can be opaque or transparent and usually have a band of mixed colors. This stone will ground you by helping you balance your emotions, boost your memory, calm the mind and alleiviets stress and increase trust in oneself. ",
         "price": 15.00,
         "hardness": 3,
         "category_id": 1,
@@ -9,7 +9,7 @@
     },
     {
         "name": "Carnelian",
-        "description": "description",
+        "description": "Carnelian was first discovered in the Bengal region of India and dates back 4,500 years. The stone is brown but once placed in sunlight becomes a rich red color.Carnilien belongs to the mineral family quartz. It is said that this stone encompasses luck, health and royalty. People wore it for nosebleeds, skin diseases and PMS.",
         "price": 20.00,
         "hardness": 7,
         "category_id": 1,
@@ -17,7 +17,7 @@
     },
     {
         "name": "Garnet",
-        "description": "description",
+        "description": "Garnet is formed under high temperatures and pressure. It is a red, brown or black color. And it is used to help geoligists gauge how high the temperature and pressure the surrounding rocks endured. It was said to have been the only light on Noah's Ark. Garnet has become a stone of courage and the power of positive thinking.",
         "price": 1000.00,
         "hardness": 6.5,
         "category_id": 2,
@@ -25,7 +25,7 @@
     },
     {
         "name": "Onyx",
-        "description": "description",
+        "description": "Onyx forms from spring water or groundwater that has an abundance of calcite dissolved in it. Onyxes have bands of color. Onyx belongs to the mineral family quartz. Much of the onyx sold today is dyed to enhance its color. It is used as a protective stone.",
         "price": 250.00,
         "hardness": 7,
         "category_id": 2,
@@ -33,7 +33,7 @@
     },
     {
         "name": "Tiger Eye",
-        "description": "description",
+        "description": "Tigers eye can be found in Australia, Mexico, India, South Africa and Burma. Tigers Eye is a member of the Chalcedony mineral famly. It is formed when crocidolite in a rock is replaced with fibrous crystals of chalcedony. When weathered causes the surfaces of the remaining crocidolite to become coated in iron oxides making the golden/brown color. This stone was used to ward off curses.",
         "price": 3.00,
         "hardness": 7,
         "category_id": 1,
@@ -41,7 +41,7 @@
     },
     {
         "name": "Turquoise",
-        "description": "description",
+        "description": "The oldest turquoise mines are in the Sinai Peninsula of Egypt. Turquoise is hydrated phosphat, copper and alluminim and the chemical formula is CuAl6(PO4)4(OH)8·4H2O. Turquoise is typically found in arid environments and in fillings typically in volcanic rocks. It was used as a healing stone.",
         "price": 10.00,
         "hardness": 6,
         "category_id": 1,
@@ -49,7 +49,7 @@
     },
     {
         "name": "Amethyst",
-        "description": "description",
+        "description": "The majority of Amythyst come from Brazil in geodes within volcanic rocks. Amethyst are formed inside pyrogenic volcanic rocks referred to as basalts. They are a purple color and belong to the mineral family quartz. The meaning of Amethyst is spiritual healing, calmness, and wisdom. ",
         "price": 25.00,
         "hardness": 7,
         "category_id": 1,
@@ -57,14 +57,14 @@
     },
     {
         "name": "Lapiz Lazuli",
-        "description": "description",
+        "description": "Lapiz Lazuli was mined as early as the 7th millennium in Afghanistan in Sar i Sang mines. The name comes from lapis, a Latin word meaning stone, while lazuli comes from the Persian word lazhuward, meaning blue. Lapis lazuli forms near igneous intrusions where limestone or marble has been altered by contact metamorphism or hydrothermal metamorphism. Lapis Lazuli is a mixture of three minerals Lazurite, calcite and pyrite. It is known for being the wisdom stone.",
         "price": 100.00,
         "hardness": 5,
         "category_id": 2
     },
     {
         "name": "Rose Quartz",
-        "description": "description",
+        "description": "Rose Quartz can be found in Brazil, Sweden, Maine, Namibia and California. It is formed through a magma crystalization and can also be found in hydrothermal veins. The pinkish color is produced with ficrous borosilicate. Rose quartz is used for love and encourages connection.",
         "price": 100.00,
         "hardness": 7,
         "category_id": 1,
@@ -72,7 +72,7 @@
     },
     {
         "name": "Citrine",
-        "description": "description",
+        "description": "Natural Citrine can be found in the Ural mountains of Russia and Madagascar. Most citrnes is heat treated amethyst. Natural citrine is formed by heat from the mantle that transforms amethyst and smoky quartz into citrine. Belongs to the quartz mineral family. Citrine was said to radiate positive energy and is known as the success stone.",
         "price": 15.00,
         "hardness": 7,
         "category_id": 1,
@@ -80,16 +80,16 @@
     },
     {
         "name": "Fire Opal",
-        "description": "description",
-        "price": 150.00,
+        "description": "Fire Opals are formed when water seeps into silica lava filling the seams and hollows with heat and pressure. Fire opals are amorphous mineraloids that comprise hydrated silica (SiO2·nH2O).It is believed that they were first mined in East Africa and now are mined in the United States, Mexico and Autralia. Stone is related to loyalty and trust and can ward off evil.",
+        "price": 4000.00,
         "hardness": 1,
         "category_id": 3,
         "user_id": 4
     },
     {
         "name": "Alexandrite",
-        "description": "description",
-        "price": 12000.00,
+        "description": "Alexandrite was discovered in the 19th century in the ural mountains of Russia while mining for emeralds; they looked green/blue in darkness but red in light. Brazil, Sri Lanka, and East Africa are now the main sources for alexandrite. It is the stone of good luck and fortune.",
+        "price": 15000.00,
         "hardness": 8.5,
         "category_id": 3,
         "user_id": 4
