@@ -1,11 +1,11 @@
 [
     {
-        "category_name": "common"
+        "category_name": "Common"
     },
     {
-        "category_name": "uncommon"
+        "category_name": "Uncommon"
     },
     {
-        "category_name": "rare"
+        "category_name": "Rare"
     }
 ]
