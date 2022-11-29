@@ -38,11 +38,11 @@
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
         </div>
-        {{#if crystals.length}}
+        {{#if Crystals.length}}
         <div class="col crystal-list">
           <h3>Current Crystal:</h3>
       
-          {{#each crystals as |crystal|}}
+          {{#each Crystals as |crystal|}}
           <div class="row">
             <div class="col-md-8">
               <h4><a href="/crystals/{{crystal.id}}">{{crystal.name}}</a></h4>
