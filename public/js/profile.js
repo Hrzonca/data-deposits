@@ -27,7 +27,7 @@ const submitNewForm = async (event) => {
     if (event.target.hasAttribute('data-id')) {
       const id = event.target.getAttribute('data-id');
   
-      const response = await fetch(`/api/crystal/${id}`, {
+      const response = await fetch(`/api/crystals/${id}`, {
         method: 'DELETE',
       });
   
@@ -44,6 +44,6 @@ const submitNewForm = async (event) => {
     .addEventListener('submit', submitNewForm);
   
   document
-    .querySelector('.project-list')
+    .querySelector('.crystal-list')
     .addEventListener('click', deleteButtonHandler);
   
