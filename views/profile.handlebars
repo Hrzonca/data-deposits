@@ -21,8 +21,8 @@
               <label for="descriptionInput" class="form-label">Description:</label>
               <textarea class="form-control" id="crystalDescription" aria-label="With textarea"></textarea>
             </div>
-            <label for="customRangeHardness" class="form-label">Input Hardness</label>
-<input type="range" class="form-range" min="0" max="10" id="customRangeHardness">
+            <input type="range" min="1" max="10" value="1" id="passAmountSlider">
+            <input class="number-input" type="number" min="1" max="10" value="1" id="passAmountNumber">
            <div>
             <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
               <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
@@ -35,24 +35,35 @@
               <label class="btn btn-outline-primary" for="btncheck3">Rare</label>
             </div>
            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary new-project-form">Submit</button>
           </form>
         </div>
         {{#if crystal.length}}
         <div class="col project-list">
           <h3>Current Crystal:</h3>
       
-          {{#each crystal as |crystal|}}
+          {{#each renderCrystals as |crystal|}}
           <div class="row">
             <div class="col-md-8">
               <h4><a href="/crystal/{{crystal.id}}">{{crystal.name}}</a></h4>
             </div>
             <div class="col-md-4">
-              <button class="btn btn-sm btn-danger" data-id="{{crystal.id}}">DELETE</button>
+              <button class="btn btn-sm btn-danger .project-list" data-id="{{crystal.id}}">DELETE</button>
             </div>
           </div>
           {{/each}}
         </div>
+        {{else}}
+          <div class="col project-list">
+          <h3>Current Crystal:</h3>
+           <div class="row">
+            <div class="col-md-8">
+              <h4>No Crytals found</h4>
+            </div>
+            <div class="col-md-4">
+              <button class="btn btn-sm btn-danger .project-list" data-id="{{crystal.id}}">DELETE</button>
+            </div>
+          </div>
         {{/if}}
       </div>
     </div>
