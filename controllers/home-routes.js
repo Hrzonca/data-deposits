@@ -33,7 +33,7 @@ router.get('/profile', withAuth, async (req, res) => {
       include: [{ model: Crystal }],
     });
 
-    const user = userData.get();
+    const user = userData.get({ plain: true });
 
     res.render('profile', {
       ...user,
