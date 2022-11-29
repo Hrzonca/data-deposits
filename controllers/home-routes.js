@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
     });
 
     const renderCrystals = common.map((crystal) => crystal.get({ plain: true }));
-    
+    // res.status(200).json(renderCrystals);
     res.render('homepage', {
       renderCrystals,
       logged_in: req.session.logged_in,
@@ -33,7 +33,7 @@ router.get('/profile', withAuth, async (req, res) => {
       include: [{ model: Crystal }],
     });
 
-    const user = userData.get({ plain: true });
+    const user = userData.get();
 
     res.render('profile', {
       ...user,

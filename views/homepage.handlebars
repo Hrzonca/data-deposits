@@ -1,12 +1,12 @@
 <!-- Loop over each object in the projects array -->
  <div class="row">
-{{#each crystal as |crystal| }}
+{{#each renderCrystals as |crystal| }}
           <div class="card mb-3 col-sm-5">
             <a class="card-title text-center" href="/crystal/{{crystal.id}}"><h2>{{crystal.name}}</h2></a>
             <img class="card-img-top " src="" alt="Card image cap">
             <div class="card-body bg-light mb-3">
               <p class="card-text">  {{crystal.description}}</p>
-              <p class="card-text"><small class="text-muted">Posted by {{crystal.user.name}} on {{format_date project.date_created}}</small></p>
+              <p class="card-text"><small class="text-muted">Posted by {{crystal.user.name}} on </small></p>
             </div>
               <h3 class="text-danger text-right"> Very Rare Hardness:{{hardness}}</h3>
           </div>
