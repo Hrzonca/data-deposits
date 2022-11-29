@@ -60,7 +60,8 @@
         "description": "Lapiz Lazuli was mined as early as the 7th millennium in Afghanistan in Sar i Sang mines. The name comes from lapis, a Latin word meaning stone, while lazuli comes from the Persian word lazhuward, meaning blue. Lapis lazuli forms near igneous intrusions where limestone or marble has been altered by contact metamorphism or hydrothermal metamorphism. Lapis Lazuli is a mixture of three minerals Lazurite, calcite and pyrite. It is known for being the wisdom stone.",
         "price": 100.00,
         "hardness": 5,
-        "category_id": 2
+        "category_id": 2,
+        "user_id": 1
     },
     {
         "name": "Rose Quartz",
@@ -107,7 +108,8 @@
         "description": "description",
         "price": 550.00,
         "hardness": 6,
-        "category_id": 2
+        "category_id": 2,
+        "user_id": 1
     },
     {
         "name": "Musgravite",
