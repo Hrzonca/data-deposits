@@ -9,7 +9,16 @@
     margin-right: 0px;
 }
 
-@media screen and (max-width: 510px) {
+.card {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.card-title {
+    padding-left: 1.25rem;
+}
+
+@media screen and (max-width: 530px) {
     #nav-container {
         justify-content: center;
     }
