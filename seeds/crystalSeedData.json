@@ -97,7 +97,7 @@
     },
     {
         "name": "Poudretteite",
-        "description": "description",
+        "description": "Poudretteite is an extremely rare mineral. the mineral was discovered in Quebec, Canada in the 1960s. the mineral is a transparent colorless or pale pink in color. The mineral is created with potassium, sodium, boron, silicon, and oxygen.",
         "price": 6000.00,
         "hardness": 5,
         "category_id": 3,
@@ -105,7 +105,7 @@
     },
     {
         "name": "Tanzanite",
-        "description": "description",
+        "description": "Tanzanite is a blue/ violet mineral. the mineral is part of the epidote mineral group. The mineral is only found in a small mining area of Tanzania. The mineral will appear more blue when exposed to florescent light.",
         "price": 550.00,
         "hardness": 6,
         "category_id": 2,
@@ -113,7 +113,7 @@
     },
     {
         "name": "Musgravite",
-        "description": "description",
+        "description": "Musgravite is a rare oxide mineral. Commonly found in south Australia where it was discovered in 1967. The mineral has a grey green to green appearance.",
         "price": 35000.00,
         "hardness": 8,
         "category_id": 3,
