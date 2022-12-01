@@ -27,19 +27,19 @@ router.post('/', withAuth, async (req, res) => {
 
 router.delete('/:id', withAuth, async (req, res) => {
   try {
-    const userData = await User.destroy({
+    const crystalData = await Crystal.destroy({
       where: {
         id: req.params.id,
         user_id: req.session.user_id,
       },
     });
 
-    if (!userData) {
-      res.status(404).json({ message: 'No user found with this id!' });
+    if (!crystalData) {
+      res.status(404).json({ message: 'No crystal found with this id!' });
       return;
     }
 
-    res.status(200).json(userData);
+    res.status(200).json(crystalData);
   } catch (err) {
     res.status(500).json(err);
   }
