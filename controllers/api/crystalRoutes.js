@@ -1,7 +1,17 @@
 const router = require('express').Router();
 const { Crystal, User } = require('../../models');
 const withAuth = require('../../utils/auth');
-
+router.get('/', async (req, res) => {
+  try {
+    const crystalData = await Crystal.findAll(req.body);
+    res.render("homepage", {
+      crystalData,
+    })
+    res.status(200).json(crystalData);
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
 router.post('/', withAuth, async (req, res) => {
     try {
         const newPost = await Crystal.create({
