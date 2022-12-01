@@ -35,7 +35,7 @@
               <label class="btn btn-outline-primary" for="btncheck3">Rare</label>
             </div>
            </div>
-            <button type="submit" class="btn btn-primary new-project-form">Submit</button>
+            <button type="submit" class="btn btn-primary new-Crystal">Submit</button>
           </form>
         </div>
         {{#if Crystals.length}}
@@ -44,8 +44,9 @@
         {{#each Crystals as |crystal|}}
           <div class="row">
             <div class="col-md-8">
-              <h4>{{crystal.id}} {{crystal.name}}</h4>
-              <p>Description: {{crystal.description}} Price: {{crystal.price}} Hardness: {{crystal.hardness}}</p>
+
+              <h4>{{crystal.name}}</h4>
+
             </div>
             <div class="col-md-4">
               <button class="btn btn-sm btn-brown .project-list" data-id="{{crystal.id}}">DELETE</button>
