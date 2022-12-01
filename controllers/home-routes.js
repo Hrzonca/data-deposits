@@ -29,7 +29,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/crystals/:id', async (req, res) => {
+router.get('/crystal/:id', async (req, res) => {
   try {
     const crystalData = await Crystal.findByPk(req.params.id, {
       include: [{ model: User }],
