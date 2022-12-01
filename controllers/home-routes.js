@@ -54,7 +54,7 @@ router.get('/profile', withAuth, async (req, res) => {
       include: [
         {
         model: Crystal,
-        attributes: ['id', 'name']
+        attributes: ['id', 'name', 'description', 'price', 'hardness']
         }
       ],
     });
