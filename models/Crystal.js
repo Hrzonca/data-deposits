@@ -34,6 +34,12 @@ Crystal.init(
                 max: 10
             }
         },
+        date_created: {
+            type: DataTypes.DATE,
+            allowNull: false,
+            defaultValue: DataTypes.NOW
+            
+        },
         category_id: {
             type: DataTypes.INTEGER,
             references: {
