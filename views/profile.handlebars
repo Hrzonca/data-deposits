@@ -10,7 +10,7 @@
       
           <form class="new-project-form">
             <div class="mb-3">
-              <label for="CrystalName" class="form-label">Crystal Name</label>
+              <label for="CrystalName" class="form-label">Crystal Name:</label>
               <input class="form-control" id="crystalName" aria-label="crystal Input">
             </div>
             <div class="mb-3">
@@ -40,15 +40,15 @@
         </div>
         {{#if Crystals.length}}
         <div class="col crystal-list">
-          <h3>Current Crystal:</h3>
-      
-          {{#each Crystals as |crystal|}}
+          <h3>My Crystals:</h3>
+        {{#each Crystals as |crystal|}}
           <div class="row">
             <div class="col-md-8">
-              <h4><a href="/crystals/{{crystal.id}}">{{crystal.name}}</a></h4>
+              <h4>{{crystal.id}} {{crystal.name}}</h4>
+              <p>Description: {{crystal.description}} Price: {{crystal.price}} Hardness: {{crystal.hardness}}</p>
             </div>
             <div class="col-md-4">
-              <button class="btn btn-sm btn-danger .project-list" data-id="{{crystal.id}}">DELETE</button>
+              <button class="btn btn-sm btn-brown .project-list" data-id="{{crystal.id}}">DELETE</button>
             </div>
           </div>
           {{/each}}
@@ -58,7 +58,7 @@
           <h3>Current Crystal:</h3>
            <div class="row">
             <div class="col-md-8">
-              <h4>No Crytals found</h4>
+              <h4>No Crystals found</h4>
             </div>
             <div class="col-md-4">
               <button class="btn btn-sm btn-danger .project-list" data-id="{{crystal.id}}">DELETE</button>
