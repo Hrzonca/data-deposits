@@ -3,7 +3,7 @@
 {{#each renderCrystals as |crystal| }}
           <div class="card mb-3 col-sm-5 ">
             <h3 class="text-danger card-header">{{crystal.category.category_name}}</h3>
-            <a class="card-title text-center"><h2>{{crystal.name}}</h2></a>
+            <a class="card-title text-center" href="/crystal/{{crystal.id}}"><h2>{{crystal.name}}</h2></a>
             <img class="card-img-top " src="" alt="Card image cap">
             <div class="card-body bg-light mb-3">
               <p class="card-text"> About this crystal: {{crystal.description}}</p>
