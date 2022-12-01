@@ -17,9 +17,9 @@ hardnessNumBox.addEventListener('input', syncCharacterAmount)
 hardness.addEventListener('input', syncCharacterAmount)
 const submitNewForm = async (event) => {
     event.preventDefault();
-    if (includeUppercase) category_id = 1
-    if (includeSymbols) category_id = 2
-    if (includeNumbers) category_id = 3
+    if (isCommon) category_id = 1
+    if (isUncommon) category_id = 2
+    if (isRare) category_id = 3
     const name = document.querySelector('#crystalName').value.trim();
     const price = document.querySelector('#crystalPrice').value.trim();
     const description = document.querySelector('#crystalDescription').value.trim();
