@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const { Crystal, User } = require('../../models');
 const withAuth = require('../../utils/auth');
-var birthstone = require('birthstone');
+// var birthstone = require('birthstone');
 
 router.get('/', async (req, res) => {
   try {
