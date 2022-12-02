@@ -42,6 +42,11 @@
     margin-right: 0px;
 }
 
+.image {
+    margin: 0 auto;
+    height: 100px;
+}
+
 @media screen and (max-width: 530px) {
     #nav-container {
         justify-content: center;

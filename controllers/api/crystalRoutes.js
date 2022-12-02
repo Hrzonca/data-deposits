@@ -25,6 +25,19 @@ router.post('/', withAuth, async (req, res) => {
       } 
 });
 
+router.get('/crystal/images/:image', async (req, res) => {
+  try {
+    const image = await Crystal.findByPk(req.body);
+
+    res.render('crystal', {
+      image
+    });
+
+  }catch (err) {
+    res.status(500).json(err);
+  }
+})
+
 router.delete('/:id', withAuth, async (req, res) => {
   try {
     const crystalData = await Crystal.destroy({
