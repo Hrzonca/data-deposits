@@ -1,18 +1,29 @@
 <!-- Loop over each object in the projects array -->
- <div class="row justify-content-center">
-{{#each renderCrystals as |crystal| }}
-          <div class="card mt-4 mx-2 col-md-5">
-            <a class="card-header text-center bg-dark" href="/crystal/{{crystal.id}}"><h2>{{crystal.name}}</h2></a>
-            <h3 class="card-title mb-0">Description:</h3>
-            {{!-- <img class="card-img-top " src="" alt="Card image cap"> --}}
-            <div class="card-body bg-light">
-              <p class="card-text">{{crystal.description}}</p>
-              <p class="card-text"><small class="text-muted">Posted by: {{crystal.user.name}} on {{formatDate crystal.date_created}}</small></p>
-              <p class="card-text"><span class="properties">Rarity: </span>{{crystal.category.category_name}}</p>
-              <p class="card-text"><span class="properties">Price: </span>${{crystal.price}}</p>
-              <p class="card-text"><span class="properties">Hardness: </span>{{hardness}}</p>
-            </div>
-          </div>
-{{/each}}
- </div>
-
+<div class="row justify-content-center">
+  {{#each renderCrystals as |crystal| }}
+  <div class="card mt-4 mx-2 col-md-5">
+    <a class="card-header text-center bg-dark" href="/crystal/{{crystal.id}}">
+      <h2>{{crystal.name}}</h2>
+    </a>
+    <h3 class="card-title mb-0">Description:</h3>
+    {{!-- <img class="card-img-top " src="" alt="Card image cap"> --}}
+    <div class="card-body bg-light">
+      <p class="card-text">{{crystal.description}}</p>
+      <p class="card-text"><small class="text-muted">Posted by: {{crystal.user.name}} on {{formatDate
+          crystal.date_created}}</small></p>
+      <p class="card-text"><span class="properties">Rarity: </span>{{crystal.category.category_name}}</p>
+      <p class="card-text"><span class="properties">Price: </span>${{crystal.price}}</p>
+      <p class="card-text"><span class="properties">Hardness: </span>{{hardness}}</p>
+    </div>
+  </div>
+  {{/each}}
+</div>
+<footer class="navbar navbar-dark navbar-expand bg-dark">
+  <nav class="container-fluid d-flex flex-wrap" id="nav-container">
+    <a href="https://www.linkedin.com/in/otto-bisno-b39392134/">Otto Bisno</a>
+    <a href="https://www.linkedin.com/in/haleigh-rzonca-794942249/">Haleigh Rzonca</a>
+    <a href="https://www.linkedin.com/in/harrison-duong-b018b5247/">Harrison Duong</a>
+    <a href="https://github.com/ncortes04">Nicholas Cortes</a>
+    <a href="https://www.linkedin.com/in/yazmin-bazail-247b14217/">Yazmin Bazail</a>
+  </nav>
+</footer>
