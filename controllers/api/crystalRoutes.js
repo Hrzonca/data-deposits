@@ -1,7 +1,6 @@
 const router = require('express').Router();
 const { Crystal, User } = require('../../models');
 const withAuth = require('../../utils/auth');
-// var birthstone = require('birthstone');
 
 router.get('/', async (req, res) => {
   try {
@@ -14,7 +13,6 @@ router.get('/', async (req, res) => {
     res.status(400).json(err);
   }
 
-  birthstone(0);
 });
 
 router.post('/', withAuth, async (req, res) => {
