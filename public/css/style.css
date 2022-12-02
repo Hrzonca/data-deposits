@@ -2,11 +2,16 @@
     border-bottom: 1px solid #ccc;
 }
 
-#title {
-    font-size: 1.6rem;
-    font-weight: 700;
-    color: whitesmoke;
-    margin-right: 0px;
+.btn-check {
+    margin-right: 1rem;
+}
+
+#btncheck2 {
+    margin-left: 1rem;
+}
+
+#btncheck3 {
+    margin-left: 1rem;
 }
 
 .card {
@@ -28,6 +33,13 @@
 
 .properties {
     font-weight: bold;
+}
+
+#title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: whitesmoke;
+    margin-right: 0px;
 }
 
 @media screen and (max-width: 530px) {
