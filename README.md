@@ -1,4 +1,4 @@
-# data-deposits
+# Data Deposits Crystal Gallery
 
 ## Description
 A crystal gallery online webpage that displays the different gems we have in our gallery as well as their relevant information. Upon opening the page, the user will be able to view the crystals in our gallery and have the option of signing up. After logging in, users will have the option to add crystals of their own.
