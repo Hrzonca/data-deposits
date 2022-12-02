@@ -1,6 +1,8 @@
 const router = require('express').Router();
 const { Crystal, User } = require('../../models');
 const withAuth = require('../../utils/auth');
+var birthstone = require('birthstone');
+
 router.get('/', async (req, res) => {
   try {
     const crystalData = await Crystal.findAll(req.body);
@@ -11,7 +13,10 @@ router.get('/', async (req, res) => {
   } catch (err) {
     res.status(400).json(err);
   }
+
+  birthstone(0);
 });
+
 router.post('/', withAuth, async (req, res) => {
     try {
         const newPost = await Crystal.create({
